@@ -10,21 +10,24 @@ function App() {
   const [selectedNav, setSelectedNav] = useState({
     'title': 'About Me',
     'path': ''
-});
+  });
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="text-center cover-container d-flex h-100 p-3 mx-auto flex-column">
+      {/* Header */}
         <Header selectedNav={selectedNav} setSelectedNav={setSelectedNav}></Header>
-      </header>
-      <section>
-        {selectedNav.title === 'About Me' && <AboutMe/>}
-        {selectedNav.title === 'Portfolio' && <Portfolio/>}
-        {selectedNav.title === 'Resume' && <Resume/>}
-        {selectedNav.title === 'Contact' && <Contact/>}
-      </section>
-      <footer>
-
+      {/* Page content */}
+      <main>
+        {selectedNav.title === 'About Me' && <AboutMe />}
+        {selectedNav.title === 'Portfolio' && <Portfolio />}
+        {selectedNav.title === 'Resume' && <Resume />}
+        {selectedNav.title === 'Contact' && <Contact />}
+      </main>
+      {/* Footer Content */}
+      <footer className="mastfoot mt-auto">
+        <div className="inner">
+          <p>Copyright <a href="#">@NimitPatel</a>.</p>
+        </div>
       </footer>
     </div>
   );
