@@ -148,3 +148,13 @@ body {
 .card .card-img-top {
   min-height: 200px;
 }
+
+.form-control {
+  width: 480px;
+  margin: 8px 0px;
+}
+
+.textarea.form-control {
+  width: auto;
+  margin: 8px 0px;
+}
