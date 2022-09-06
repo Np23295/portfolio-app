@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
@@ -24,10 +25,8 @@ function App() {
         {selectedNav.title === 'Contact' && <Contact />}
       </main>
       {/* Footer Content */}
-      <footer className="mastfoot mt-auto">
-        <div className="inner">
-          <p>Copyright <a href="#">@NimitPatel</a>.</p>
-        </div>
+      <footer className='mt-auto'>
+        <Footer className="mastfoot"></Footer>
       </footer>
     </div>
   );
